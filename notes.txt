@@ -39,4 +39,6 @@ edit client folder package.json file and add a proxy after developement array ob
     ],
       "proxy":"http://localhost:5000"
 
-6) start to create the server file (server.js)
+6) setup the server file (server.js) and setup mongo connection
+7) setup the schema (model folder)
+8) setup routes
