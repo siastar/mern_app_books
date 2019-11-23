@@ -28,4 +28,7 @@ mongoose.connect(dbPath,
                 );
 
 const port = process.env.PORT || 5000; //in cased deployed in environment with own vars
+app.listen( port, () => {
+    console.log('app is running');
+})
 
