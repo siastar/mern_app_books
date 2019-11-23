@@ -1,0 +1,8 @@
+*.*~
+*.*#
+.tern-port
+/config/keys.js
+/node_modules
+/backup
+/client/node_modules
+/client/backup

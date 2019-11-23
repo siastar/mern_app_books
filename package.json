@@ -1,0 +1,24 @@
+{
+  "name": "mern_app_books",
+  "version": "1.0.0",
+  "description": "read carefully the title",
+  "main": "index.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js",
+      "client": "cd client && npm run start",
+      "server": "nodemon index --ignore client/",
+      "client-install": "cd client && npm install",
+      "server-install": "npm install",
+      "install-all": "concurrently \"npm run client-install\" \"npm run server-install\"",
+      "dev": "concurrently \"npm run client\" \"npm run server\""
+      
+      
+  },
+  "author": "ytze",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12"
+  }
+}
