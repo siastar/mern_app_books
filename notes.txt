@@ -19,9 +19,9 @@ edit project folder package.json and create a start script
 
  "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1", // already existing
-      "start": "node index.js", // starts run the index.js (or whatever) in node environment
+      "start": "node server.js", // starts run the server.js (or whatever) in node environment
       "client": "cd client && npm run start", // enter the client folder and runs the start script in the client's package.json 
-      "server": "nodemon index.js --ignore client/", // runs nodemon only on server (ignores client)    
+      "server": "nodemon server.js --ignore client/", // runs nodemon only on server (ignores client)    
       "client-install": "cd client && npm install", // automatically install server node packages
       "server-install": "npm install", // automatically install client node packages
       "install-all": "concurrently \"npm run client-install\" \"npm run server-install\"", //automatically installs both server anc client node packages
@@ -38,3 +38,5 @@ edit client folder package.json file and add a proxy after developement array ob
       "last 1 safari version"
     ],
       "proxy":"http://localhost:5000"
+
+6) start to create the server file (server.js)
