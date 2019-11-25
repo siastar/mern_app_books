@@ -1,3 +1,7 @@
+---------------------------------------------------------------
+This Project Roadmap
+---------------------------------------------------------------
+
 1st setup git, then
 
 assuming that we have
@@ -8,12 +12,12 @@ already global-installed on npm
 
 [in the project folder]
 
-1) npm init
-2) install express
-3) install mongoose
-4) create-react-app client (it will setup a react app in a folder called "client")
+(1) npm init
+(2) install express
+(3) install mongoose
+(4) create-react-app client (it will setup a react app in a folder called "client")
 
-5) setup the dev management
+(5) setup the dev management
 
 edit project folder package.json and create a start script
 
@@ -39,6 +43,19 @@ edit client folder package.json file and add a proxy after developement array ob
     ],
       "proxy":"http://localhost:5000"
 
-6) setup the server file (server.js) and setup mongo connection
-7) setup the schema (model folder)
-8) setup routes
+(6) setup the server file (server.js) and setup mongo connection
+(7) setup the schema (model folder)
+(8) setup routes (Create Update Read Delete)
+
+bookRouter.get( '/' , (req , res) => {... Read 
+
+bookRouter.post( '/' , (req , res) => {... Create
+
+bookRouter.delete('/:id' , (req , res) => {... Delete
+
+bookRouter.put('/:id' , (req , res) => {... Update
+
+(9) test the Backend
+
+
+

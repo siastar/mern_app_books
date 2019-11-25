@@ -5,7 +5,7 @@ const bodyParser = require ('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
-const book = require ('./routes/book');
+const book = require ('./routes/bookRoutes.js');
 app.use('/book' , book);
 
 const dbPath = 'mongodb://localhost:27017/booksdb'
@@ -13,7 +13,8 @@ const dbPath = 'mongodb://localhost:27017/booksdb'
 mongoose.connect(dbPath,
                  {   
                      useNewUrlParser: true,
-                     useFindAndModify: false
+                     useFindAndModify: false,
+                     useUnifiedTopology: true 
                      //avoid deprecation warning
                  },
 
