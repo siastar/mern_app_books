@@ -1,6 +1,8 @@
 ---------------------------------------------------------------
-This Project Roadmap
+LIST OF BOOKS App
 ---------------------------------------------------------------
+
+notes made while coding this app as personal roadmap reference.
 
 1st of all setup git,
 
@@ -17,7 +19,10 @@ already global-installed on npm
 (3) install mongoose
 (4) create-react-app client (it will setup a react app in a folder called "client")
 
+
+**************************************************************************************************************************************************************
 (5) setup the dev management
+**************************************************************************************************************************************************************
 
 edit project folder package.json and create a start script
 
@@ -42,10 +47,14 @@ edit client folder package.json file and add a proxy after developement array ob
       "last 1 safari version"
     ],
       "proxy":"http://localhost:5000"
+**************************************************************************************************************************************************************
 
 (6) setup the server file (server.js) and setup mongo connection
 (7) setup the schema (model folder)
+
+**************************************************************************************************************************************************************
 (8) setup routes (Create Update Read Delete)
+**************************************************************************************************************************************************************
 
 bookRouter.get( '/' , (req , res) => {... Read 
 
@@ -55,7 +64,29 @@ bookRouter.delete('/:id' , (req , res) => {... Delete
 
 bookRouter.put('/:id' , (req , res) => {... Update
 
+**************************************************************************************************************************************************************
+(9) launch the Backend
+**************************************************************************************************************************************************************
+
+a) start mongodb: server $ sudo mongod
+b) start the server: $ npm run server
+
+something similar would be good sign:
+
+   > mern_app_books@1.0.0 server /home/ytze/CodeBox/NodeJs/mern_app_books
+   > nodemon server --ignore client/
+
+   [nodemon] 2.0.1
+   [nodemon] to restart at any time, enter `rs`
+   [nodemon] watching dir(s): *.*
+   [nodemon] watching extensions: js,mjs,json
+   [nodemon] starting `node server.js`
+   app is running
+   listening on port 5000
+   succesfully connected to  mongodb://localhost:27017/booksdb
+
+**************************************************************************************************************************************************************
 (9) test the Backend
-
-
+**************************************************************************************************************************************************************
+ 
 

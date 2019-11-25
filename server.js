@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const book = require ('./routes/bookRoutes.js');
-app.use('/book' , book);
+app.use('/books' , book); //localhost:5000/books - books is the name of the collection inside booksdb
 
 const dbPath = 'mongodb://localhost:27017/booksdb'
 
@@ -29,7 +29,9 @@ mongoose.connect(dbPath,
                 );
 
 const port = process.env.PORT || 5000; //in cased deployed in environment with own vars
+
 app.listen( port, () => {
     console.log('app is running');
-})
+    console.log('listening on port' , port);
+});
 
