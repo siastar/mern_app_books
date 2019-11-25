@@ -2,9 +2,9 @@
 This Project Roadmap
 ---------------------------------------------------------------
 
-1st setup git, then
+1st of all setup git,
 
-assuming that we have
+then assuming we have
  nodemon
  cuncurrency
  create-react-app
