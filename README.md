@@ -88,5 +88,38 @@ something similar would be good sign:
 **************************************************************************************************************************************************************
 (9) test the Backend
 **************************************************************************************************************************************************************
- 
 
+with mongodb console or MongoDB compass create a "bookdb" database with a "books" collection
+(in any case it would be automatically created at the first post)
+put some dummy data in, respecting the /model/book.js schema
+
+make a get request (insomnia - postman etc or just browse)
+localhost:5000/books
+
+it should return the dummy data
+
+_id	"5ddc62948f909c2c47160e9a"
+title	"Mr Mouse story"
+author	"Dean Bean"
+year	"1974"
+price	"12"
+	
+_id	"5ddc637795faed48b3db8674"
+title	"Mr Cat adventures"
+author	"John Meow"
+year	"1987"
+price	"13"
+__v	0
+
+that means get works
+
+make a post request and throw in some other stuff
+
+{
+    "title": "Docto Dog goest to town",
+    "author": "Greg Dogg",
+    "year": "1962",
+    "price": "15"
+  }
+
+make a put request by id 5ddc655b95faed48b3db8675 (find your own in database, this is randomly generated)

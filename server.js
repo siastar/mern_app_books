@@ -24,7 +24,7 @@ mongoose.connect(dbPath,
                          console.log('unable to connect to ', dbPath)
                      }
                      else console.log('succesfully connected to ', dbPath)
-                 }
+                 } 
                  
                 );
 
