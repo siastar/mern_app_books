@@ -14,10 +14,10 @@ notes made while coding this app as personal roadmap reference.
 
 * [in the project folder]
 
-* (1) npm init
-* (2) install express
-* (3) install mongoose
-* (4) create-react-app client (it will setup a react app in a folder called "client")
+* $ npm init
+* $ install express
+* $ install mongoose
+* $ create-react-app client (it will setup a react app in a folder called "client")
 
 
 **************************************************************************************************************************************************************
@@ -59,7 +59,7 @@ notes made while coding this app as personal roadmap reference.
 *(7) setup the schema (model folder)
 
 **************************************************************************************************************************************************************
-(8) setup routes (Create Update Read Delete)
+(8) setup routes (CRUD: Create Update Read Delete)
 **************************************************************************************************************************************************************
 
 bookRouter.get( '/' , (req , res) => {... Read 
@@ -137,5 +137,40 @@ make a put request by id to modify existing stuff
     "year": "1975",
     "price": "18"
   }
+*************************************************************************************
+Now we have:
 
+**server.js**
+defines other files routes,
+/routes/bookRoutes
+/model/Book
+db connection routes and ports
 
+**/routes/bookRoutes**
+defines routes for CRUD operations, GET POST DELETE PUT
+
+**/model/Book**
+defines Schema (mongoose) alias the data prototype, in this case
+
+```javascript
+const BookSchema = new Schema({
+
+    title:{
+        type: String,
+        required: true
+    },
+     author:{
+        type: String,
+        required: true
+     },
+     year:{
+        type: String,
+        required: Number
+     },
+     price:{
+        type: String,
+        required: Number
+    }
+    
+})
+```
