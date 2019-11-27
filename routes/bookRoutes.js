@@ -64,8 +64,8 @@ bookRouter.delete('/:id' , (req , res) => {
 //Update
 
 bookRouter.put('/:id' , (req , res) => {
-    Book.findOneAndUpdate(req.params.id , // the ele,emt to update
-                          req.body , // updated content
+    Book.findOneAndUpdate(req.params.id , // params.id is the element to update
+                          req.body , // updated content, findOneandupdate ius a mongoose method
                           {runValidators : true},
                           (err , response) => {
                                if (err)

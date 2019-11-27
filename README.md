@@ -105,7 +105,7 @@ year	"1974"
 price	"12"
 	
 _id	"5ddc637795faed48b3db8674"
-title	"Mr Cat adventures"
+title	"Mr Cat's Adventures"
 author	"John Meow"
 year	"1987"
 price	"13"
@@ -122,4 +122,14 @@ make a post request and throw in some other stuff
     "price": "15"
   }
 
-make a put request by id 5ddc655b95faed48b3db8675 (find your own in database, this is randomly generated)
+make a put request by id to modify existing stuff
+(_id in mongo database is randomly generated)
+
+{
+    "title": "Doctor Dog goest to town",
+    "author": "Greg Doggo",
+    "year": "1975",
+    "price": "18"
+  }
+
+
