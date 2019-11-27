@@ -4,27 +4,27 @@ LIST OF BOOKS App
 
 notes made while coding this app as personal roadmap reference.
 
-*1st of all setup git,
+* 1st of all setup git,
 
-*then assuming we have
-* nodemon
-* cuncurrency
-* create-react-app
-*already global-installed on npm 
+* then assuming we have
+*  nodemon
+*  cuncurrency
+*  create-react-app
+* already global-installed on npm 
 
-*[in the project folder]
+* [in the project folder]
 
-*(1) npm init
-*(2) install express
-*(3) install mongoose
-*(4) create-react-app client (it will setup a react app in a folder called "client")
+* (1) npm init
+* (2) install express
+* (3) install mongoose
+* (4) create-react-app client (it will setup a react app in a folder called "client")
 
 
 **************************************************************************************************************************************************************
 (5) setup the dev management
 **************************************************************************************************************************************************************
 
-*edit project folder package.json and create a start script
+* edit project folder package.json and create a start script
 
 ```javascript
  "scripts": {
@@ -38,9 +38,9 @@ notes made while coding this app as personal roadmap reference.
       "dev": "concurrently \"npm run client\" \"npm run server\"" // runs simultaneously server and client
 }
 ```
-*now "$ npm run dev" to run both client and server 
+* now "$ npm run dev" to run both client and server 
 
-*edit client folder package.json file and add a proxy after developement array object
+* edit client folder package.json file and add a proxy after developement array object
 
 ```javascript
 
