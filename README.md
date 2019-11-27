@@ -68,22 +68,22 @@ bookRouter.put('/:id' , (req , res) => {... Update
 (9) launch the Backend
 **************************************************************************************************************************************************************
 
-a) start mongodb: server $ sudo mongod
-b) start the server: $ npm run server
+*a) start mongodb: server $ sudo mongod
+*b) start the server: $ npm run server
 
 something similar would be good sign:
 
-   > mern_app_books@1.0.0 server /home/ytze/CodeBox/NodeJs/mern_app_books
-   > nodemon server --ignore client/
+*   > mern_app_books@1.0.0 server /home/ytze/CodeBox/NodeJs/mern_app_books
+*   > nodemon server --ignore client/
 
-   [nodemon] 2.0.1
-   [nodemon] to restart at any time, enter `rs`
-   [nodemon] watching dir(s): *.*
-   [nodemon] watching extensions: js,mjs,json
-   [nodemon] starting `node server.js`
-   app is running
-   listening on port 5000
-   succesfully connected to  mongodb://localhost:27017/booksdb
+*   [nodemon] 2.0.1
+*   [nodemon] to restart at any time, enter `rs`
+*   [nodemon] watching dir(s): *.*
+*   [nodemon] watching extensions: js,mjs,json
+*   [nodemon] starting `node server.js`
+*   app is running
+*   listening on port 5000
+*   succesfully connected to  mongodb://localhost:27017/booksdb
 
 **************************************************************************************************************************************************************
 (9) test the Backend
@@ -93,8 +93,8 @@ with mongodb console or MongoDB compass create a "bookdb" database with a "books
 (in any case it would be automatically created at the first post)
 put some dummy data in, respecting the /model/book.js schema
 
-make a get request (insomnia - postman etc or just browse)
-localhost:5000/books
+*make a get request (use insomnia - postman etc or just browse)
+*localhost:5000/books
 
 it should return the dummy data
 
