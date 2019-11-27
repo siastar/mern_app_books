@@ -26,6 +26,7 @@ already global-installed on npm
 
 edit project folder package.json and create a start script
 
+```javascript
  "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1", // already existing
       "start": "node server.js", // starts run the server.js (or whatever) in node environment
@@ -36,7 +37,7 @@ edit project folder package.json and create a start script
       "install-all": "concurrently \"npm run client-install\" \"npm run server-install\"", //automatically installs both server anc client node packages
       "dev": "concurrently \"npm run client\" \"npm run server\"" // runs simultaneously server and client
 }
-  
+```
 now "$ npm run dev" to run both client and server 
 
 edit client folder package.json file and add a proxy after developement array object
